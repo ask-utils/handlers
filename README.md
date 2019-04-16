@@ -27,3 +27,20 @@ export const handler = Alexa..SkillBuilders.standard()
   )
   .lambda()
 ```
+
+#### SessionEndedRequestHandler
+
+Simple handler for `SessionEndedRequest`.
+
+```typescript
+import * as  Alexa from 'ask-sdk'
+import { SessionEndedRequestHandler } from '@ask-utils/handlers'
+
+...
+export const handler = Alexa..SkillBuilders.standard()
+  .addRequestHandlers(
+    ...,
+    SessionEndedRequestHandler
+  )
+  .lambda()
+```
