@@ -1,9 +1,9 @@
-import { HandlerInput } from 'ask-sdk-core'
+import { HandlerInput, getRequestType } from 'ask-sdk-core'
 import { createAskSdkError } from 'ask-sdk-runtime'
 
 const DeleteDisabledUserHandler = {
   canHandle(handlerInput: HandlerInput): boolean {
-      return handlerInput.requestEnvelope.request.type === 'AlexaSkillEvent.SkillDisabled'
+      return getRequestType(handlerInput.requestEnvelope) === 'AlexaSkillEvent.SkillDisabled'
   },
   async handle(handlerInput: HandlerInput): Promise<void> {
     const { deletePersistentAttributes } = handlerInput.attributesManager
