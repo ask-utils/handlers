@@ -4,3 +4,4 @@ examples/
 .DS_Store
 .envrc
 .idea/
+dev.js

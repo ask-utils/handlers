@@ -44,3 +44,20 @@ export const handler = Alexa..SkillBuilders.standard()
   )
   .lambda()
 ```
+
+## RequestHandlerFactort (Beta)
+
+You can easy to create a Alexa request handler
+
+```typescript
+import { RequestHandlerFactory } from '@ask-utils/handlers'
+
+const LaunchRequestHandler = RequestHandlerFactory.create(
+    'LaunchRequest',
+    {
+        handle (handlerInput) {
+            return handlerInput.responseBuilder.speak('hello world').getResponse()
+        }
+    }
+)
+```
