@@ -7,6 +7,7 @@ const SessionEndedRequestHandler: RequestHandler = {
     handle (handlerInput: HandlerInput): Response {
         const request = handlerInput.requestEnvelope.request as SessionEndedRequest
         console.log(`Session ended with reason: ${request.reason}`)
+        console.log('Error: %j', request.error)
         return handlerInput.responseBuilder.getResponse()
     }
 }
