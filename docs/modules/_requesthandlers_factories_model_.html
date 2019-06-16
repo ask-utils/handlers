@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CustomeRequestEnvelope | @ask-utils/handlers</title>
+	<title>&quot;requestHandlers/factories/model&quot; | @ask-utils/handlers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,101 +56,105 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_requesthandlers_handlerfactory_.html">&quot;requestHandlers/HandlerFactory&quot;</a>
-				</li>
-				<li>
-					<a href="_requesthandlers_handlerfactory_.customerequestenvelope.html">CustomeRequestEnvelope</a>
+					<a href="_requesthandlers_factories_model_.html">&quot;requestHandlers/factories/model&quot;</a>
 				</li>
 			</ul>
-			<h1>Interface CustomeRequestEnvelope&lt;CustomRequest&gt;</h1>
+			<h1>External module &quot;requestHandlers/factories/model&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>CustomRequest<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Request</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="tsd-signature-type">RequestEnvelope</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">CustomeRequestEnvelope</span>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_requesthandlers_handlerfactory_.customerequestenvelope.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="_requesthandlers_handlerfactory_.customerequestenvelope.html#request" class="tsd-kind-icon">request</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_requesthandlers_handlerfactory_.customerequestenvelope.html#session" class="tsd-kind-icon">session</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_requesthandlers_handlerfactory_.customerequestenvelope.html#version" class="tsd-kind-icon">version</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_requesthandlers_factories_model_.ihandlerbuilder.html" class="tsd-kind-icon">IHandler<wbr>Builder</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_requesthandlers_factories_model_.html#canhandle" class="tsd-kind-icon">Can<wbr>Handle</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_requesthandlers_factories_model_.html#handle" class="tsd-kind-icon">Handle</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="context" class="tsd-anchor"></a>
-					<h3>context</h3>
-					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Context</span></div>
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="canhandle" class="tsd-anchor"></a>
+					<h3>Can<wbr>Handle</h3>
+					<div class="tsd-signature tsd-kind-icon">Can<wbr>Handle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from RequestEnvelope.&#x27;context&#x27;</p>
 						<ul>
-							<li>Defined in /Users/dc_hideokamoto/develop/npm/ask-utils/handlers/node_modules/ask-sdk-model/index.d.ts:237</li>
+							<li>Defined in <a href="https://github.com/ask-utils/handlers/blob/27820af/libs/requestHandlers/factories/model.ts#L4">requestHandlers/factories/model.ts:4</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>handlerInput<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HandlerInput</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>handlerInput: <span class="tsd-signature-type">HandlerInput</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">boolean</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-					<a name="request" class="tsd-anchor"></a>
-					<h3>request</h3>
-					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CustomRequest</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="handle" class="tsd-anchor"></a>
+					<h3>Handle</h3>
+					<div class="tsd-signature tsd-kind-icon">Handle<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
-						<p>Overrides RequestEnvelope.&#x27;request&#x27;</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ask-utils/handlers/blob/27820af/libs/requestHandlers/HandlerFactory.ts#L16">requestHandlers/HandlerFactory.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ask-utils/handlers/blob/27820af/libs/requestHandlers/factories/model.ts#L5">requestHandlers/factories/model.ts:5</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="session" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> session</h3>
-					<div class="tsd-signature tsd-kind-icon">session<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Session</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from RequestEnvelope.&#x27;session&#x27;</p>
-						<ul>
-							<li>Defined in /Users/dc_hideokamoto/develop/npm/ask-utils/handlers/node_modules/ask-sdk-model/index.d.ts:236</li>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>handlerInput<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HandlerInput</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Response</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>handlerInput: <span class="tsd-signature-type">HandlerInput</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">Response</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
 						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="version" class="tsd-anchor"></a>
-					<h3>version</h3>
-					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from RequestEnvelope.&#x27;version&#x27;</p>
-						<ul>
-							<li>Defined in /Users/dc_hideokamoto/develop/npm/ask-utils/handlers/node_modules/ask-sdk-model/index.d.ts:235</li>
-						</ul>
-					</aside>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -161,86 +165,50 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_index_.html">"index"</a>
+						<a href="_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_requesthandlers_handlerfactory_.html">"request<wbr>Handlers/<wbr>Handler<wbr>Factory"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_requesthandlers_repeatintenthandler_.html">"request<wbr>Handlers/<wbr>Repeat<wbr>Intent<wbr>Handler"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_requesthandlers_deleteuserdata_.html">"request<wbr>Handlers/delete<wbr>User<wbr>Data"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_requesthandlers_factories_base_.html">"request<wbr>Handlers/factories/<wbr>Base"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_requesthandlers_factories_intent_.html">"request<wbr>Handlers/factories/<wbr>Intent"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_requesthandlers_factories_index_.html">"request<wbr>Handlers/factories/index"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_requesthandlers_handlerfactory_.html">"request<wbr>Handlers/<wbr>Handler<wbr>Factory"</a>
+						<a href="_requesthandlers_factories_model_.html">"request<wbr>Handlers/factories/model"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_requesthandlers_repeatintenthandler_.html">"request<wbr>Handlers/<wbr>Repeat<wbr>Intent<wbr>Handler"</a>
+						<a href="_requesthandlers_index_.html">"request<wbr>Handlers/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_requesthandlers_deleteuserdata_.html">"request<wbr>Handlers/delete<wbr>User<wbr>Data"</a>
+						<a href="_requesthandlers_sessionendrequest_.html">"request<wbr>Handlers/session<wbr>End<wbr>Request"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_requesthandlers_factories_base_.html">"request<wbr>Handlers/factories/<wbr>Base"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_requesthandlers_factories_intent_.html">"request<wbr>Handlers/factories/<wbr>Intent"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_requesthandlers_factories_index_.html">"request<wbr>Handlers/factories/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_requesthandlers_factories_model_.html">"request<wbr>Handlers/factories/model"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_requesthandlers_index_.html">"request<wbr>Handlers/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_requesthandlers_sessionendrequest_.html">"request<wbr>Handlers/session<wbr>End<wbr>Request"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_responseinterceptors_recordtheresponse_.html">"response<wbr>Interceptors/<wbr>Record<wbr>The<wbr>Response"</a>
+						<a href="_responseinterceptors_recordtheresponse_.html">"response<wbr>Interceptors/<wbr>Record<wbr>The<wbr>Response"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_requesthandlers_handlerfactory_.fallbackintentfactory.html" class="tsd-kind-icon">Fallback<wbr>Intent<wbr>Factory</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_requesthandlers_factories_model_.ihandlerbuilder.html" class="tsd-kind-icon">IHandler<wbr>Builder</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_requesthandlers_handlerfactory_.launchrequesthandlerfactory.html" class="tsd-kind-icon">Launch<wbr>Request<wbr>Handler<wbr>Factory</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_requesthandlers_factories_model_.html#canhandle" class="tsd-kind-icon">Can<wbr>Handle</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_requesthandlers_handlerfactory_.requesthandlerfactory.html" class="tsd-kind-icon">Request<wbr>Handler<wbr>Factory</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_requesthandlers_handlerfactory_.customhandlerinput.html" class="tsd-kind-icon">Custom<wbr>Handler<wbr>Input</a>
-					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_requesthandlers_handlerfactory_.customerequestenvelope.html" class="tsd-kind-icon">Custome<wbr>Request<wbr>Envelope</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_requesthandlers_handlerfactory_.customerequestenvelope.html#context" class="tsd-kind-icon">context</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-								<a href="_requesthandlers_handlerfactory_.customerequestenvelope.html#request" class="tsd-kind-icon">request</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_requesthandlers_handlerfactory_.customerequestenvelope.html#session" class="tsd-kind-icon">session</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_requesthandlers_handlerfactory_.customerequestenvelope.html#version" class="tsd-kind-icon">version</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_requesthandlers_handlerfactory_.requesthandlerbuilder.html" class="tsd-kind-icon">Request<wbr>Handler<wbr>Builder</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_requesthandlers_handlerfactory_.tmergetargethandler.html" class="tsd-kind-icon">TMerge<wbr>Target<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_requesthandlers_handlerfactory_.trequesthandler.html" class="tsd-kind-icon">TRequest<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_requesthandlers_handlerfactory_.html#merge" class="tsd-kind-icon">merge</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_requesthandlers_factories_model_.html#handle" class="tsd-kind-icon">Handle</a>
 					</li>
 				</ul>
 			</nav>
