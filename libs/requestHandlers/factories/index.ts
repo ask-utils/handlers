@@ -3,6 +3,7 @@ import IntentHandlerBuilder from './Intent'
 import LaunchRequestBuilder from './LaunchRequest'
 export * from './Base'
 export * from './Intent'
+export * from './model'
 
 export class IntentHandlerFactory {
     public static init (intentName?: string): IntentHandlerBuilder {
