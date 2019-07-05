@@ -1,5 +1,6 @@
 import HandlerBuilder from './Base'
 import IntentHandlerBuilder from './Intent'
+import LaunchRequestBuilder from './LaunchRequest'
 export * from './Base'
 export * from './Intent'
 
@@ -16,5 +17,11 @@ export class HandlerFactory {
             return IntentHandlerFactory.init(intentName)
         }
         return new HandlerBuilder()
+    }
+}
+
+export class LaunchRequestFactory {
+    public static init (): HandlerBuilder {
+        return new LaunchRequestBuilder()
     }
 }
