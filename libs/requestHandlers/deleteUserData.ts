@@ -1,7 +1,7 @@
 import { HandlerInput, getRequestType } from 'ask-sdk-core'
 import { createAskSdkError } from 'ask-sdk-runtime'
 
-const DeleteDisabledUserHandler = {
+export const DeleteDisabledUserHandler = {
     canHandle (handlerInput: HandlerInput): boolean {
         return getRequestType(handlerInput.requestEnvelope) === 'AlexaSkillEvent.SkillDisabled'
     },

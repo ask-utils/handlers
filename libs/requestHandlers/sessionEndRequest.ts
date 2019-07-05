@@ -1,6 +1,6 @@
 import { HandlerInput, getRequestType, RequestHandler } from 'ask-sdk-core'
 import { SessionEndedRequest, Response } from 'ask-sdk-model'
-const SessionEndedRequestHandler: RequestHandler = {
+export const SessionEndedRequestHandler: RequestHandler = {
     canHandle (handlerInput: HandlerInput): boolean {
         return getRequestType(handlerInput.requestEnvelope) === 'SessionEndedRequest'
     },
