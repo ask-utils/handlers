@@ -34,8 +34,9 @@ const merge = (handler: TMergeTargetHandler, target?: TMergeTargetHandler): TReq
     return Object.assign({}, fallBackHandler, target, handler)
 }
 
+export type SupportedHandlerType = 'LaunchRequest'
 export class RequestHandlerFactory {
-    public static create (type: string, handler: TMergeTargetHandler): TRequestHandler {
+    public static create (type: SupportedHandlerType, handler: TMergeTargetHandler): TRequestHandler {
         return new Resolver(
             new LaunchRequestHandlerFactory(),
             new FallbackIntentFactory()
